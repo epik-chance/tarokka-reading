@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tarokka-reading/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/tarokka-reading/static/js/main.2b5fad5d.chunk.js",
+    "main.js.map": "/tarokka-reading/static/js/main.2b5fad5d.chunk.js.map",
+    "runtime-main.js": "/tarokka-reading/static/js/runtime-main.2b85cf58.js",
+    "runtime-main.js.map": "/tarokka-reading/static/js/runtime-main.2b85cf58.js.map",
+    "static/js/2.488ffc96.chunk.js": "/tarokka-reading/static/js/2.488ffc96.chunk.js",
+    "static/js/2.488ffc96.chunk.js.map": "/tarokka-reading/static/js/2.488ffc96.chunk.js.map",
+    "static/js/3.59847d9d.chunk.js": "/tarokka-reading/static/js/3.59847d9d.chunk.js",
+    "static/js/3.59847d9d.chunk.js.map": "/tarokka-reading/static/js/3.59847d9d.chunk.js.map",
+    "index.html": "/tarokka-reading/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/tarokka-reading/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.488ffc96.chunk.js.LICENSE.txt": "/tarokka-reading/static/js/2.488ffc96.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/tarokka-reading/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b85cf58.js",
+    "static/js/2.488ffc96.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.2b5fad5d.chunk.js"
+  ]
+}
