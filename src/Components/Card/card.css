@@ -1,0 +1,69 @@
+.card {
+    width: 267.5px;
+    height: 375px;
+    margin: 20px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+
+    /* -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; */
+}
+
+.card.active:hover {
+    filter: drop-shadow(0 0 30px rgba(251, 232, 135, 1));
+    /* transition: text-shadow 0.2s ease-in; */
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-radius: 5%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.cardFront {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    background-color: red;
+    background-size: cover;
+}
+
+.cardBack {
+    background-color: blue;
+    background-image: url(./CardArt/CardBack.png);
+    background-size: cover;
+}
+
+.cardInner.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
