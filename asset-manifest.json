@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tarokka-reading/static/css/main.5d86cbe7.chunk.css",
-    "main.js": "/tarokka-reading/static/js/main.7a119573.chunk.js",
-    "main.js.map": "/tarokka-reading/static/js/main.7a119573.chunk.js.map",
+    "main.css": "/tarokka-reading/static/css/main.45d60732.chunk.css",
+    "main.js": "/tarokka-reading/static/js/main.f001b911.chunk.js",
+    "main.js.map": "/tarokka-reading/static/js/main.f001b911.chunk.js.map",
     "runtime-main.js": "/tarokka-reading/static/js/runtime-main.25368c9c.js",
     "runtime-main.js.map": "/tarokka-reading/static/js/runtime-main.25368c9c.js.map",
     "static/js/2.1d33ad29.chunk.js": "/tarokka-reading/static/js/2.1d33ad29.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.26c9db62.chunk.js": "/tarokka-reading/static/js/3.26c9db62.chunk.js",
     "static/js/3.26c9db62.chunk.js.map": "/tarokka-reading/static/js/3.26c9db62.chunk.js.map",
     "index.html": "/tarokka-reading/index.html",
-    "static/css/main.5d86cbe7.chunk.css.map": "/tarokka-reading/static/css/main.5d86cbe7.chunk.css.map",
+    "static/css/main.45d60732.chunk.css.map": "/tarokka-reading/static/css/main.45d60732.chunk.css.map",
     "static/js/2.1d33ad29.chunk.js.LICENSE.txt": "/tarokka-reading/static/js/2.1d33ad29.chunk.js.LICENSE.txt",
     "static/media/Abjurer.2218a4fb.png": "/tarokka-reading/static/media/Abjurer.2218a4fb.png",
     "static/media/Anarchist.d53963a6.png": "/tarokka-reading/static/media/Anarchist.d53963a6.png",
@@ -67,12 +67,12 @@
     "static/media/Transmuter.b52e0837.png": "/tarokka-reading/static/media/Transmuter.b52e0837.png",
     "static/media/Warrior.b7a8d5a9.png": "/tarokka-reading/static/media/Warrior.b7a8d5a9.png",
     "static/media/Wizard.79d13e0f.png": "/tarokka-reading/static/media/Wizard.79d13e0f.png",
-    "static/media/reading.css": "/tarokka-reading/static/media/background.1afc6842.png"
+    "static/media/background.1afc6842.png": "/tarokka-reading/static/media/background.1afc6842.png"
   },
   "entrypoints": [
     "static/js/runtime-main.25368c9c.js",
     "static/js/2.1d33ad29.chunk.js",
-    "static/css/main.5d86cbe7.chunk.css",
-    "static/js/main.7a119573.chunk.js"
+    "static/css/main.45d60732.chunk.css",
+    "static/js/main.f001b911.chunk.js"
   ]
 }
