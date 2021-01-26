@@ -4,14 +4,20 @@
     margin: 20px;
     -webkit-perspective: 1000px;
     perspective: 1000px;
-
+    display: block;
+    opacity: 0;
     /* -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%; */
+    transition: opacity 2s ease-in;
+}
+
+.card.active {
+    display: block;
+    opacity: 1;
 }
 
 .card.active:hover {
     filter: drop-shadow(0 0 30px rgba(251, 232, 135, 1));
-    /* transition: text-shadow 0.2s ease-in; */
 }
 
 .cardInner {

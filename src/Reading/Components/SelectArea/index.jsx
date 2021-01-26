@@ -7,22 +7,43 @@ import './selectArea.css'
 
 function SelectArea(props) {
   const [isActive, setActive] = useState(false);
+  const [isDeckSpread, setDeckSpread] = useState(false);
+  const [numCardsChosen, setNumCardsChosen] = useState(0);
+  const [reset, setReset] = useState(false);
 
-  const length = 14;
+  const length = 20;
 
   useEffect(() => {
+    let deckSpreadTimer;
     const timer = setTimeout(() => {
       setActive(true)
-    }, 3000)
-    return () => clearTimeout(timer);
+      deckSpreadTimer = setTimeout(() => {
+        setDeckSpread(true);
+      }, 1000)
+    }, 1000)
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(deckSpreadTimer);
+    }
   }, []);
 
   const setStyle = (i) => {
     const documentWidth = window.innerWidth * 0.96;
-    const left = (documentWidth - 267.5) * i / 14;
-    const style = {
-      left: isActive ? left : 0,
+    const left = (documentWidth - 267.5) * i / length;
+    const midPoint = length / 2;
+    const rotation = (i - midPoint) * 1.5;
+    const translateY = (Math.abs(i - midPoint) * 7) - 20;
+    const transform = `rotate(${rotation}deg) translateY(${translateY}px) rotate(${rotation / 4}deg)`
+    let style = {
+      left: 0
     }
+    if (isDeckSpread) {
+      style = {
+        left,
+        transform,
+      }
+    }
+
     return style;
   }
 
@@ -30,10 +51,46 @@ function SelectArea(props) {
     opacity: 1
   }
 
+  useEffect(() => {
+    if(numCardsChosen >= 5) {
+      setTimeout(() => {
+        setDeckSpread(false);
+        setTimeout(() => {
+          setActive(false);
+          startReset();
+        }, 2000);
+      }, 2000)
+    }
+  }, [numCardsChosen])
+
+  const onSelect= () => {
+    props.onSelectCard();
+    setNumCardsChosen(numCardsChosen + 1);
+  }
+
+  const startReset = () => {
+    setNumCardsChosen(0);
+    setReset(true);
+  }
+
+  const onReset = () => {
+    setReset(false);
+  }
+
+
   return (
     <div className='selectArea' style={isActive ? areaActive : {}}>
-    {console.log(isActive)}
-      { Array.from(new Array(length), (_, i) => ( <SelectCard key={i} style={setStyle(i)} className={classNames({'spread': isActive})} />)) }
+      { Array.from(new Array(length), (_, i) => ( 
+        <SelectCard
+          key={i}
+          dataKey={i}
+          style={setStyle(i)}
+          onSelect={onSelect}
+          onReset={onReset}
+          reset={reset}
+          className={classNames({'spread': isDeckSpread})}
+        />  
+      )) }
     </div>
   )
 }

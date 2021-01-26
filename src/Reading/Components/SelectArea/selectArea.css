@@ -2,7 +2,6 @@
   width: calc(90vw);
   height: 375px;
   position: absolute;
-  background-color: blue;
   z-index: 10;
   top: calc(100vh - 187.5px);
   left: 4vw;
@@ -13,15 +12,14 @@
   grid-template-columns: repeat(auto-fit, minmax(2px, max-content)); */
 }
 
-.selectArea
-
 .selectCard{
   position: absolute;
-  transition: all 1s;
-  transform: rotate(0deg) translateY(0px);
+  top: 0;
+  /* transform: rotate(0deg) translateY(0px); */
+  transition: transform 1s linear, left 1s linear;
 }
 
-.spread.selectCard:nth-child(1) {
+/* .spread.selectCard:nth-child(1) {
   transform: rotate(-3.5deg) translateY(13px);
 }
 .selectCard:nth-child(2).spread {
@@ -63,4 +61,13 @@
 }
 .selectCard:nth-child(14).spread {
   transform: rotate(3.5deg) translateY(13px);
+} */
+
+
+.selectCard.selected {
+  /* transform: translateY(-200px); */
+  opacity: 0;
+  pointer-events: none;
+  top: -200px;
+  transition: all 1s, top 1s ease;
 }

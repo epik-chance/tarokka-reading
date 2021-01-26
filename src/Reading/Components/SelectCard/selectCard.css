@@ -30,3 +30,12 @@
   background-image: url(../../../Components/Card/CardArt/CardBack.png);
   background-size: cover;
 }
+
+.selectCard .label {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 11;
+  font-weight: 800;
+  text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+}
