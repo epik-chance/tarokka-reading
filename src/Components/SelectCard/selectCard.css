@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   border-radius: 5%;
-  background-image: url(../../../Components/Card/CardArt/CardBack.png);
+  background-image: url(../Card/CardArt/CardBack.png);
   background-size: cover;
 }
 

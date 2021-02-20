@@ -1,8 +1,13 @@
 import {React, useState, useEffect} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 
-import PlayArea from './Components/PlayArea'
-import SelectArea from './Components/SelectArea'
+import PlayArea from '../Components/PlayArea'
+import SelectArea from '../Components/SelectArea'
 
 import './reading.css'
 
@@ -44,22 +49,32 @@ function Reading(props) {
 
   return (
     <div className='reading'>
-        {/* <div className='deckArea highDeck'>
+        <Router>
+          <Switch>
+            <Route path="/DMScreen">
+              <PlayArea 
+                cardOneActive={cardOneActive}
+                cardTwoActive={cardTwoActive}
+                cardThreeActive={cardThreeActive}
+                cardFourActive={cardFourActive}
+                cardFiveActive={cardFiveActive}
+                isDMCard={true}
+              />
+            </Route>
+            <Route path="/">
+              <SelectArea active={true} onSelectCard={onSelectFromSelectArea} />
+              <PlayArea 
+                cardOneActive={cardOneActive}
+                cardTwoActive={cardTwoActive}
+                cardThreeActive={cardThreeActive}
+                cardFourActive={cardFourActive}
+                cardFiveActive={cardFiveActive}
+              />
+            </Route>
+          </Switch>
 
-        </div>
+        </Router>
 
-        <div className='deckArea lowDeck'>
-
-        </div> */}
-
-        <SelectArea active={true} onSelectCard={onSelectFromSelectArea} />
-        <PlayArea 
-          cardOneActive={cardOneActive}
-          cardTwoActive={cardTwoActive}
-          cardThreeActive={cardThreeActive}
-          cardFourActive={cardFourActive}
-          cardFiveActive={cardFiveActive}
-        />
     </div>
   )
 }

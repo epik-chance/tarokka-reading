@@ -1,0 +1,24 @@
+.setupCard.active {
+  width: 267.5px;
+  height: 375px;
+  margin: 20px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  display: block;
+  opacity: 1;
+  /* -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; */
+  transition: opacity 2s ease-in;
+}
+
+.selections {
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  display: block;
+  z-index: 10;
+  top: 25%;
+  left: 10%;
+  font-size: 1rem;
+  font-size-adjust: unset;
+}

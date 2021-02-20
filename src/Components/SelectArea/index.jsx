@@ -77,7 +77,7 @@ function SelectArea(props) {
     setReset(false);
   }
 
-
+if(props.active) {
   return (
     <div className='selectArea' style={isActive ? areaActive : {}}>
       { Array.from(new Array(length), (_, i) => ( 
@@ -93,6 +93,10 @@ function SelectArea(props) {
       )) }
     </div>
   )
+} else {
+  return ([]);
+}
+
 }
 
 export default SelectArea;

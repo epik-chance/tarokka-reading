@@ -40,7 +40,7 @@ import Priest from './CardArt/Priest.png';
 import Raven from './CardArt/Raven.png';
 import Rogue from './CardArt/Rogue.png';
 import Seer from './CardArt/Seer.png';
-import Shepard from './CardArt/Shepard.png';
+import Shepherd from './CardArt/Shepard.png';
 import Soldier from './CardArt/Soldier.png';
 import Swashbuckler from './CardArt/Swashbuckler.png';
 import TaxCollector from './CardArt/TaxCollector.png';
@@ -97,7 +97,7 @@ const cardInfo = {
   Raven,
   Rogue,
   Seer,
-  Shepard,
+  Shepherd,
   Soldier,
   Swashbuckler,
   TaxCollector,
@@ -109,7 +109,84 @@ const cardInfo = {
   Transmuter,
   Warrior,
   Wizard,
-  CardBack
+  // CardBack
+}
+
+const highDeck = {
+  Artifact,
+  Executioner,
+  Beast,
+  Horseman,
+  BrokenOne,
+  Innocent,
+  Darklord,
+  Marionette,
+  Donjon,
+  Mists,
+  Seer,
+  Raven,
+  Ghost,
+  Tempter,
+}
+
+const swords = {
+  Warrior,
+  Avenger,
+  Paladin,
+  Soldier,
+  Mercenary,
+  Myrmidon,
+  Berserker,
+  HoodedOne,
+  Dictator,
+  Torturer,
+}
+
+const coins = {
+  Rogue,
+  Swashbuckler,
+  Philanthrophist,
+  Trader,
+  Merchant,
+  GuildMember,
+  Beggar,
+  Thief,
+  TaxCollector,
+  Miser,
+}
+
+const stars = {
+  Wizard,
+  Transmuter,
+  Diviner,
+  Enchanter,
+  Abjurer,
+  Elementalist,
+  Evoker,
+  Illusionist,
+  Necromancer,
+  Conjurer,
+}
+
+const glyphs = {
+  Priest,
+  Monk,
+  Missionary,
+  Healer,
+  Shepherd,
+  Druid,
+  Anarchist,
+  Charlatan,
+  Bishop,
+  Traitor,
+}
+
+const commonDeck = {
+ swords,
+ coins,
+ stars,
+ glyphs,
 }
 
 export default cardInfo;
+export { cardInfo, highDeck, commonDeck }
