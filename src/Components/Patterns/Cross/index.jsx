@@ -40,14 +40,10 @@ function Cross(props) {
   }, [])
 
   const getCardInfo = (cardKey, index, defaultDeck) => {
-    // console.log(cardKey + " " + index + " " + defaultDeck);
     const savedCardInfo = JSON.parse(localStorage.getItem(cardKey));
     const deck = savedCardInfo?.deck || defaultDeck || 0;
     const card = savedCardInfo?.card || 'random';
-    if(cardKey == 'cross1') {
-      console.log(deck);
-      console.log(card);
-    }
+
     switch (deck) {
       default:
       case 0:
@@ -81,8 +77,6 @@ function Cross(props) {
   const cross3 = getCardInfo('cross3', 3, 2);
   const cross4 = getCardInfo('cross4', 4, 1);
   const cross5 = getCardInfo('cross5', 5, 1);
-
-  // console.log(shuffledCommonDeck[0]);
 
   return (
     <div className="patternContainer">
