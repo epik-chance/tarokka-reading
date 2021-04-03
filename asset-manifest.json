@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/tarokka-reading/static/css/main.55c3f660.chunk.css",
-    "main.js": "/tarokka-reading/static/js/main.f6b4b46c.chunk.js",
-    "main.js.map": "/tarokka-reading/static/js/main.f6b4b46c.chunk.js.map",
-    "runtime-main.js": "/tarokka-reading/static/js/runtime-main.87f86611.js",
-    "runtime-main.js.map": "/tarokka-reading/static/js/runtime-main.87f86611.js.map",
-    "static/js/2.f84b4b59.chunk.js": "/tarokka-reading/static/js/2.f84b4b59.chunk.js",
-    "static/js/2.f84b4b59.chunk.js.map": "/tarokka-reading/static/js/2.f84b4b59.chunk.js.map",
-    "static/js/3.96b1e881.chunk.js": "/tarokka-reading/static/js/3.96b1e881.chunk.js",
-    "static/js/3.96b1e881.chunk.js.map": "/tarokka-reading/static/js/3.96b1e881.chunk.js.map",
+    "main.css": "/tarokka-reading/static/css/main.e51ca508.chunk.css",
+    "main.js": "/tarokka-reading/static/js/main.e95999b1.chunk.js",
+    "main.js.map": "/tarokka-reading/static/js/main.e95999b1.chunk.js.map",
+    "runtime-main.js": "/tarokka-reading/static/js/runtime-main.43354c96.js",
+    "runtime-main.js.map": "/tarokka-reading/static/js/runtime-main.43354c96.js.map",
+    "static/css/2.80298448.chunk.css": "/tarokka-reading/static/css/2.80298448.chunk.css",
+    "static/js/2.df222692.chunk.js": "/tarokka-reading/static/js/2.df222692.chunk.js",
+    "static/js/2.df222692.chunk.js.map": "/tarokka-reading/static/js/2.df222692.chunk.js.map",
+    "static/js/3.f47d6135.chunk.js": "/tarokka-reading/static/js/3.f47d6135.chunk.js",
+    "static/js/3.f47d6135.chunk.js.map": "/tarokka-reading/static/js/3.f47d6135.chunk.js.map",
     "index.html": "/tarokka-reading/index.html",
-    "static/css/main.55c3f660.chunk.css.map": "/tarokka-reading/static/css/main.55c3f660.chunk.css.map",
-    "static/js/2.f84b4b59.chunk.js.LICENSE.txt": "/tarokka-reading/static/js/2.f84b4b59.chunk.js.LICENSE.txt",
+    "static/css/2.80298448.chunk.css.map": "/tarokka-reading/static/css/2.80298448.chunk.css.map",
+    "static/css/main.e51ca508.chunk.css.map": "/tarokka-reading/static/css/main.e51ca508.chunk.css.map",
+    "static/js/2.df222692.chunk.js.LICENSE.txt": "/tarokka-reading/static/js/2.df222692.chunk.js.LICENSE.txt",
     "static/media/Abjurer.2218a4fb.png": "/tarokka-reading/static/media/Abjurer.2218a4fb.png",
     "static/media/Anarchist.d53963a6.png": "/tarokka-reading/static/media/Anarchist.d53963a6.png",
     "static/media/Artifact.f9ab7adc.png": "/tarokka-reading/static/media/Artifact.f9ab7adc.png",
@@ -67,12 +69,14 @@
     "static/media/Transmuter.b52e0837.png": "/tarokka-reading/static/media/Transmuter.b52e0837.png",
     "static/media/Warrior.b7a8d5a9.png": "/tarokka-reading/static/media/Warrior.b7a8d5a9.png",
     "static/media/Wizard.79d13e0f.png": "/tarokka-reading/static/media/Wizard.79d13e0f.png",
-    "static/media/playArea.css": "/tarokka-reading/static/media/background.1afc6842.png"
+    "static/media/playArea.css": "/tarokka-reading/static/media/background.1afc6842.png",
+    "static/media/semantic.min.css": "/tarokka-reading/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.87f86611.js",
-    "static/js/2.f84b4b59.chunk.js",
-    "static/css/main.55c3f660.chunk.css",
-    "static/js/main.f6b4b46c.chunk.js"
+    "static/js/runtime-main.43354c96.js",
+    "static/css/2.80298448.chunk.css",
+    "static/js/2.df222692.chunk.js",
+    "static/css/main.e51ca508.chunk.css",
+    "static/js/main.e95999b1.chunk.js"
   ]
 }
